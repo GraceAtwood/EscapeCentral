@@ -1,0 +1,45 @@
+{
+  "Id": "test",
+  "Conditions": [
+    {
+      "HubId": "door",
+      "ElementId": "clock",
+      "State": "1",
+      "Actions": [
+        {
+			"$type": "EscapeCentral.GameDef.Actions.PlaySoundAction, EscapeCentral",
+			"Delay": 0,
+			"FileLocation": "Assets/FirstDoor.wav",
+			"Repeat": false,
+			"RepeatCount": 0
+        },
+		{
+			"$type": "EscapeCentral.GameDef.Actions.PlaySoundAction, EscapeCentral",
+			"Delay": 4000,
+			"FileLocation": "Assets/SecondDoor.wav",
+			"Repeat": false,
+			"RepeatCount": 0
+		}
+      ]
+    }
+  ],
+  "Hubs": [
+    {
+      "Id": "door",
+	  "Elements": [
+		{
+			"Id": "clock"
+		},
+		{
+			"Id": "lights"
+		},
+		{
+			"Id": "lock"
+		},
+		{
+			"Id": "motor"
+		}
+	  ]
+    }
+  ]
+}
